@@ -53,7 +53,7 @@ class SmartRRuntimeConstants {
     File getBaseDir() {
         def dir = grailsApplication.config.smartR.baseDir
         if (!dir) {
-            dir = File.createTempDir("smartR", ".baseDir");
+            dir = File.createTempDir("SmartR.", ".baseDir");
             setBaseDir(dir)
         }
         dir as File
